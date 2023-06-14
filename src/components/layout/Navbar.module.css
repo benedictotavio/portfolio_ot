@@ -1,0 +1,8 @@
+#navbar {
+    background-color: #2a4762;
+}
+
+#navbar a {
+    color: aliceblue;
+    text-shadow: 2.5px 2px 2px black;
+}

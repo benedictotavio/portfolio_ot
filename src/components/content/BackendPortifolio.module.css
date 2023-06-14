@@ -1,0 +1,11 @@
+#backend {
+    min-height: 90vh;
+}
+
+.card_content {
+    padding-inline: 15px;
+}
+
+.card_content div {
+    margin-top: 10px;
+}

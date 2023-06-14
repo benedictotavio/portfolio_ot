@@ -1,0 +1,131 @@
+#main {
+    background-color: rgb(243, 243, 240);
+    display: flex;
+    justify-content: center;
+    background: #f8e192;
+    background: -webkit-linear-gradient(to right, #f8e192, #ffffff);
+    background: linear-gradient(to right, #f8e192, #ffffff);
+    min-height: 100vh;
+}
+
+#main_card {
+    margin: 2% auto;
+    border-radius: 20px 20px 0px 80px;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    height: 30px;
+}
+
+.wrapper span {
+    display: block;
+    height: 100%;
+    animation: spin_words 10s infinite;
+    padding-right: 4px;
+    text-align: center;
+    text-shadow: 1px 1.5px 1px black;
+}
+
+.wrapper span:nth-child(2){
+    color: #5fd1f3;
+    text-shadow: 2px 1.5px 2px black;
+}
+
+.wrapper span:nth-child(3){
+    color: #54914e;
+    text-shadow: 1px 1.5px 1px black;
+}
+
+.wrapper span:nth-child(4){
+    color: #4faa43;
+    text-shadow: 1px 1.5px 1px black;
+}
+
+.wrapper span:nth-child(5){
+    color: #336691;
+    text-shadow: 1px 1.5px 1px black;
+}
+
+.words{
+    overflow: hidden;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-212%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-312%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-412%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+#main_card #main_card_img img {
+    background-color: black;
+    border-radius: 10px 100px 20px 80px;
+    border: 2px solid white;
+}
+
+@media (max-width:600px) {
+    #main_card #main_card_img {
+        display: none;
+    }
+
+    #main_card {
+        background-color: aliceblue;
+        margin: 10% auto;
+    }
+}
+
+#main_card #main_card_text {
+    color: aliceblue;
+}
+
+#main_card #main_card_text h3 {
+    text-shadow: 2.5px 2px 2.5px black;
+    color: #fed005;
+    text-align: right;
+}
+
+#main_card #main_card_text h2 {
+    text-shadow: .5px 1px .5px black;
+    text-align: right;
+    color: #2a4762
+}
+
+#main_card #main_card_text p {
+    text-align: right;
+    color: #2a4762;
+    text-shadow: 2.5px 2px 2.5px bisque;
+}
+
+#btn_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}

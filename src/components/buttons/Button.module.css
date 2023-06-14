@@ -1,0 +1,10 @@
+#btn{
+    padding: 0 30px;
+    border-radius: 25px;
+    margin: auto 7.5px;
+}
+
+#btn:hover{
+    transform: scale(1.1);
+    transition: .45s;
+}
