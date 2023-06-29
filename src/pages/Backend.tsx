@@ -1,4 +1,4 @@
-import BackendPortifolio from "../components/content/BackendPortifolio";
+import BackendPortifolio from "../components/content/backend/BackendPortifolio";
 
 const Backend = () => {
   return (

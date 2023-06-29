@@ -1,4 +1,4 @@
-import Card from "../layout/Card";
+import Card from "../../layout/Card";
 import styles from "./BackendPortifolio.module.css";
 
 const BackendPortifolio = () => {

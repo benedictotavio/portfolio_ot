@@ -27,7 +27,7 @@ const Navbar = () => {
             <a className="nav-link mx-md-3" aria-current="page" href="/backend">
               Backend
             </a>
-            <a className="nav-link mx-md-3" href="#">
+            <a className="nav-link mx-md-3" aria-current="page" href="/frontend">
               Frontend
             </a>
             <a className="nav-link mx-md-3" href="#">

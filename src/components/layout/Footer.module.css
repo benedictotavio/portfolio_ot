@@ -1,39 +1,9 @@
-.footer {
-    background-color: #24415c;
-}
+#footer {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.footer ul {
-    background-color: #173755;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-.footer a {
-    text-decoration: none;
-    font-family: 'Questrial', sans-serif;
-    font-style: italic;
-    color: aliceblue;
-}
-
-.footer a:hover {
-    color: #e9b830;
-}
-
-.footer p {
-    font-family: 'Montserrat', sans-serif;
-    color: aliceblue;
-    background-color: #1a3f61;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin: 0;
-}
-
-.footer span a {
-    color: #2a4762;
-    text-shadow: 1.5px 1.5px 2px black;
-}
-
-.footer span i {
-    color: aliceblue;
-    margin: auto 3px;
 }

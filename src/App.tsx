@@ -3,6 +3,7 @@ import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/layout/Footer";
 import Backend from "./pages/Backend";
+import Frontend from "./pages/Frontend";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/backend" element={<Backend />} />
+          <Route path="/frontend" element={<Frontend />} />
         </Routes>
       </BrowserRouter>
       <Footer />

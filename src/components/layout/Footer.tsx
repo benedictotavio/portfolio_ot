@@ -3,44 +3,46 @@ import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
-      <footer className="py-md-3 mt-2 text-center">
-        <ul className="nav justify-content-center pt-md-4 pb-md-4 mb-3">
+    <div id={styles.footer} className="container-fluid">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p className="col-md-4 mb-0 text-muted">
+          © {new Date().getFullYear()} Company, Inc
+        </p>
+
+        <a
+          href="/"
+          className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <AiFillGithub fontSize={24} color={"yellow"} />
+        </a>
+
+        <ul className="nav col-md-4 justify-content-end">
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 text-body-secondary">
+            <a href="#" className="nav-link px-2 text-muted">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a
-              target="blank"
-              href="https://www.linkedin.com/in/otavio-benedicto-746421232/"
-              className="nav-link px-2 text-body-secondary"
-            >
-              Linkedin
+            <a href="#" className="nav-link px-2 text-muted">
+              Features
             </a>
           </li>
           <li className="nav-item">
-            <a
-              target="blank"
-              href="https://www.instagram.com/mahhh_vieira/ "
-              className="nav-link px-2 text-body-secondary"
-            >
-              Instagram
+            <a href="#" className="nav-link px-2 text-muted">
+              Pricing
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-muted">
+              FAQs
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-muted">
+              About
             </a>
           </li>
         </ul>
-        <p className="text-center text-body-secondary">
-          © {new Date().getFullYear()} Company, Inc&nbsp;|&nbsp;
-          <span>
-            <a target="blank" href="https://github.com/otaviobenedicto">
-              <i>
-                <AiFillGithub />
-              </i>
-              Created BY
-            </a>
-          </span>
-        </p>
       </footer>
     </div>
   );
