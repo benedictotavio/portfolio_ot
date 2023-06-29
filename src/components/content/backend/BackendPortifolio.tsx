@@ -5,9 +5,9 @@ const BackendPortifolio = () => {
   return (
     <div id={styles.backend}>
       <div className={styles.card_content}>
-        <Card title="Api de Sistema de Pagamento" />
-        <Card title="Api para gestão de Estacionamento" />
-        <Card title="Server side de ecommerce" />
+        <Card title="Api de Sistema de Pagamento" secondBtn={false} />
+        <Card title="Api para gestão de Estacionamento" secondBtn={false} />
+        <Card title="Api E-Commerce" secondBtn={false} />
       </div>
     </div>
   );

@@ -1,26 +1,21 @@
-import { FormEvent, useState } from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { useState } from "react";
+import { AiFillGithub, AiFillChrome } from "react-icons/ai";
 
 type Props = {
   title: string;
+  secondBtn: boolean;
+  linkSite?: string;
 };
 
-const Card = ({ title }: Props) => {
+const Card = ({ title, secondBtn, linkSite }: Props) => {
   const [activeTab, setActiveTab] = useState("#tab1");
-  const [activeLink, setActiveLink] = useState("desc");
-
-  const handleLinkClick = (tab: string) => {
-    setActiveLink(tab);
-  };
 
   const handleTabClick = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    link: string
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     e.preventDefault();
     const tabId = e.currentTarget?.getAttribute("href");
     setActiveTab(tabId as string);
-    handleLinkClick(link);
   };
 
   return (
@@ -28,11 +23,7 @@ const Card = ({ title }: Props) => {
       <div className="card-header">
         <ul className="nav nav-tabs card-header-tabs">
           <li className={`nav-item ${activeTab === "home" ? "active" : ""}`}>
-            <a
-              className="nav-link"
-              href="#tab1"
-              onClick={(e) => handleTabClick(e, "desc")}
-            >
+            <a className="nav-link" href="#tab1" onClick={handleTabClick}>
               Description
             </a>
           </li>
@@ -56,12 +47,24 @@ const Card = ({ title }: Props) => {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary">
+          <a href="#" className="btn btn-primary mx-2">
             GitHub{" "}
             <i>
               <AiFillGithub />
             </i>
           </a>
+          {secondBtn && (
+            <a
+              href={linkSite}
+              target="_blank"
+              className="btn btn-secondary mx-2"
+            >
+              Site{" "}
+              <i>
+                <AiFillChrome />
+              </i>
+            </a>
+          )}
         </div>
       )}
       {activeTab === "#tab2" && <div>Content of Tab 2</div>}
