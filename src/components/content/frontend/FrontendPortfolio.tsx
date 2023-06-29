@@ -1,4 +1,4 @@
-import Card from "../../layout/Card";
+import Card from "../../layout/items/Card";
 import styles from "./FrontendPortfolio.module.css";
 import {
   SiVitest,
@@ -30,6 +30,8 @@ const FrontendPortfolio = () => {
             { icon: SiBootstrap, name: "Bootstrap", color: "#563d7c" },
           ]}
           linkGit="https://github.com/otaviobenedicto/may-psico"
+          text="Site estatico e com responsividade total, com mais de 95% de desempenho, utilizando as tecnologia mais eficientes do mercado como Preact, Bootstrap e compilador VITE.
+          "
         />
         <Card
           title="MD Guincho"
@@ -41,6 +43,8 @@ const FrontendPortfolio = () => {
             { icon: SiElementor, name: "Elementor", color: "#92003B" },
           ]}
           linkGit="https://github.com/otaviobenedicto/md_guinchos"
+          text="Site estatico desenvlvido em WordPress e Elementor, para a construção e postado em cloud AWS(Amazon) ja em produção com Yoast SEO para gestão de arquivos.
+          "
         />
         <Card
           title="MD Guinchos"
@@ -54,6 +58,8 @@ const FrontendPortfolio = () => {
             { icon: SiNodedotjs, name: "Node", color: "#026E00" },
           ]}
           linkGit={""}
+          text="Site estatico desenvolvido com Biblioteca JavaScript , React.js e com o framework CSS, SCSS. Com cerca de 95% de desempenho em Desktop.
+          "
         />
       </div>
     </div>

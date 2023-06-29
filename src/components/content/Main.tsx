@@ -10,7 +10,7 @@ const Main = () => {
         <div id={styles.main_card_img}>
           <img src={me} alt="Photo from Otavio Benedicto portifolio content" />
         </div>
-        <div className="p-sm-3">
+        <div className="p-sm-2">
           <div id={styles.main_card_text}>
             <h3>I am</h3>
             <h2>Otavio Benedicto</h2>
@@ -32,8 +32,8 @@ const Main = () => {
             </p>
           </div>
           <div id={styles.btn_section} className="d-flex justify-content-end">
-              <Button text={"Download CV"} icon={<AiFillFilePdf />} />
-              <Button text={"WhatsApp"} icon={<AiOutlineWhatsApp />} />
+            <Button text={"Download CV"} icon={<AiFillFilePdf />} />
+            <Button text={"WhatsApp"} icon={<AiOutlineWhatsApp />} />
           </div>
         </div>
       </div>

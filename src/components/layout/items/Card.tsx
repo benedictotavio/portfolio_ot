@@ -8,9 +8,17 @@ type Props = {
   linkSite?: string;
   linkGit: string;
   stacksIcon: SVGObject[];
+  text: string;
 };
 
-const Card = ({ title, secondBtn, linkSite, stacksIcon, linkGit }: Props) => {
+const Card = ({
+  title,
+  secondBtn,
+  linkSite,
+  stacksIcon,
+  linkGit,
+  text,
+}: Props) => {
   const [activeTab, setActiveTab] = useState("#tab1");
 
   const handleTabClick = (
@@ -46,9 +54,8 @@ const Card = ({ title, secondBtn, linkSite, stacksIcon, linkGit }: Props) => {
       {activeTab === "#tab1" && (
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
+          <p className="card-text text-justify">
+            {text}
           </p>
           <a href={linkGit} target="_blank" className="btn btn-primary mx-2">
             GitHub{" "}

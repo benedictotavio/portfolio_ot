@@ -13,22 +13,22 @@ const Footer = () => {
           href="/"
           className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
-          <AiFillGithub fontSize={24} color={"yellow"} />
+          <AiFillGithub fontSize={24} color={"#FAECBD"} />
         </a>
 
         <ul className="nav col-md-4 justify-content-end">
           <li className="nav-item">
-            <a href="" className="nav-link px-2 text-muted">
+            <a href="https://www.linkedin.com/in/otavio-benedicto-746421232/" className="nav-link px-2 text-muted">
               Linkedln
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 text-muted">
+            <a href="" className="nav-link px-2 text-muted">
               Features
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 text-muted">
+            <a href="" className="nav-link px-2 text-muted">
               Pricing
             </a>
           </li>
