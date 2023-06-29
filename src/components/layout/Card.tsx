@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { AiFillGithub, AiFillChrome } from "react-icons/ai";
-import Stacks from "./Stacks";
-import { IconType } from "react-icons";
+import Stacks, { SVGObject } from "./Stacks";
 
 type Props = {
   title: string;
   secondBtn: boolean;
   linkSite?: string;
-  stacksIcon: IconType[];
+  linkGit: string;
+  stacksIcon: SVGObject[];
 };
 
-const Card = ({ title, secondBtn, linkSite, stacksIcon }: Props) => {
+const Card = ({ title, secondBtn, linkSite, stacksIcon, linkGit }: Props) => {
   const [activeTab, setActiveTab] = useState("#tab1");
 
   const handleTabClick = (
@@ -50,7 +50,7 @@ const Card = ({ title, secondBtn, linkSite, stacksIcon }: Props) => {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary mx-2">
+          <a href={linkGit} target="_blank" className="btn btn-primary mx-2">
             GitHub{" "}
             <i>
               <AiFillGithub />

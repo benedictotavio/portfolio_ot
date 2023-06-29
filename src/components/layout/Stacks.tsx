@@ -1,15 +1,22 @@
 import { IconType } from "react-icons";
 
+export type SVGObject = {
+  icon: IconType;
+  name: string;
+  color: string;
+};
+
 type IPropsStack = {
-  arrStacks: IconType[];
+  arrStacks: SVGObject[];
 };
 
 const Stacks = ({ arrStacks }: IPropsStack) => {
   return (
-    <div className="d-flex justify-content-center align-items-center flex-wrap">
-      {arrStacks.map((Icon, i) => (
-        <div key={i} className="flex-item mx-2 my-4">
-          <Icon  size={24} />
+    <div className="d-flex justify-content-evenly align-items-center flex-wrap">
+      {arrStacks.map((item, i) => (
+        <div key={i} className="flex-item m-4">
+          <i className="m-1">{<item.icon color={item.color} fontSize={24} />}</i><br />
+          <span>{item.name}</span>
         </div>
       ))}
     </div>
