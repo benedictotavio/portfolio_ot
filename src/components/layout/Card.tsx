@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { AiFillGithub, AiFillChrome } from "react-icons/ai";
+import Stacks from "./Stacks";
+import { IconType } from "react-icons";
 
 type Props = {
   title: string;
   secondBtn: boolean;
   linkSite?: string;
+  stacksIcon: IconType[];
 };
 
-const Card = ({ title, secondBtn, linkSite }: Props) => {
+const Card = ({ title, secondBtn, linkSite, stacksIcon }: Props) => {
   const [activeTab, setActiveTab] = useState("#tab1");
 
   const handleTabClick = (
@@ -67,7 +70,7 @@ const Card = ({ title, secondBtn, linkSite }: Props) => {
           )}
         </div>
       )}
-      {activeTab === "#tab2" && <div>Content of Tab 2</div>}
+      {activeTab === "#tab2" && <Stacks arrStacks={stacksIcon} />}
       {activeTab === "#tab3" && <div>Content of Tab 3</div>}
     </div>
   );
