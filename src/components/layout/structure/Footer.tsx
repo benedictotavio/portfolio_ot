@@ -17,19 +17,9 @@ const Footer = () => {
         </a>
 
         <ul className="nav col-md-4 justify-content-end">
-          <li className="nav-item">
+          <li className="nav-item mx-2">
             <a href="https://www.linkedin.com/in/otavio-benedicto-746421232/" className="nav-link px-2 text-muted">
               Linkedln
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="" className="nav-link px-2 text-muted">
-              Features
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="" className="nav-link px-2 text-muted">
-              Pricing
             </a>
           </li>
         </ul>

@@ -1,4 +1,3 @@
-import Logo from "../../../assets/logo.png";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -6,7 +5,15 @@ const Navbar = () => {
     <nav id={styles.navbar} className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Logo Otavio Benedicto portfolio" srcSet="" />
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcSet="/src/assets/logo_sm.jpg 600w"
+              sizes="600px"
+            />
+            <source srcSet="/src/assets/logo.jpg 1280w" sizes="1280px" />
+            <img src="/src/assets/logo.jpg" />
+          </picture>
         </a>
         <button
           className="navbar-toggler"
@@ -24,14 +31,11 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <a className="nav-link mx-md-3" aria-current="page" href="/backend">
-              Backend
-            </a>
-            <a className="nav-link mx-md-3" aria-current="page" href="/frontend">
-              Frontend
+            <a className="nav-link mx-md-3" aria-current="page" href="/project">
+              Projetos
             </a>
             <a className="nav-link mx-md-3" href="#">
-              Presentation letter
+              Carta de apresentação
             </a>
           </div>
         </div>
