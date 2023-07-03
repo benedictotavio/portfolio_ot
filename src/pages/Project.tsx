@@ -1,12 +1,8 @@
 import styles from "./Project.module.css";
-import CardProject from "../layout/items/CardProject";
-import {
-  FaLaptopCode,
-  FaDatabase,
-  FaProjectDiagram
-} from "react-icons/fa";
+import CardProject from "../components/layout/items/CardProject";
+import { FaLaptopCode, FaDatabase, FaProjectDiagram } from "react-icons/fa";
 
-import {RiStackshareLine} from 'react-icons/ri'
+import { RiStackshareLine } from "react-icons/ri";
 
 const Project = () => {
   return (

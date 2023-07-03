@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -31,12 +32,12 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <a className="nav-link mx-md-3" aria-current="page" href="/project">
+            <Link className="nav-link mx-md-3" to="/project">
               Projetos
-            </a>
-            <a className="nav-link mx-md-3" href="#">
-              Carta de apresentação
-            </a>
+            </Link>
+            <Link className="nav-link mx-md-3" to="/project">
+              Carta de aprsentação
+            </Link>
           </div>
         </div>
       </div>

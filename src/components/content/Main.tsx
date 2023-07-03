@@ -17,11 +17,13 @@ const Main = () => {
             <div className={styles.wrapper}>
               <div className={styles.words}>
                 <span>React</span>
-                <span>React</span>
                 <span>Node.js</span>
                 <span>MongoDB</span>
                 <span>PostgreSQL</span>
                 <span>Next.js</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>Nest.js</span>
               </div>
               <p>Developer</p>
             </div>
@@ -32,8 +34,14 @@ const Main = () => {
             </p>
           </div>
           <div id={styles.btn_section} className="d-flex justify-content-end">
-            <Button text={"Download CV"} icon={<AiFillFilePdf />} />
-            <Button text={"WhatsApp"} icon={<AiOutlineWhatsApp />} />
+            <Button
+              text={"Download CV"}
+              icon={<AiFillFilePdf color={"#AD0B00"} />}
+            />
+            <Button
+              text={"WhatsApp"}
+              icon={<AiOutlineWhatsApp color={"#25D366"} />}
+            />
           </div>
         </div>
       </div>

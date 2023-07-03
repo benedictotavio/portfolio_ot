@@ -8,11 +8,13 @@ type Props = {
 
 const Button = ({ text, icon }: Props) => {
   return icon ? (
-    <button id={styles.btn}>
+    <button className="p-2 px-lg-4 p-md-3" id={styles.btn}>
       {text} <i>{icon}</i>
     </button>
   ) : (
-    <button id={styles.btn}>{text}</button>
+    <button className="p-2 px-lg-4 p-md-3" id={styles.btn}>
+      {text}
+    </button>
   );
 };
 
