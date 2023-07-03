@@ -1,7 +1,8 @@
 import { IconType } from "react-icons";
 import styles from "./CardProject.module.css";
-import {FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 import { ReactElement } from "react";
+import { Link } from "react-router-dom";
 
 type IPropsCardProject = {
   title: string;
@@ -9,21 +10,20 @@ type IPropsCardProject = {
   icon: ReactElement<IconType>;
 };
 
-const CardProject = ({ title, stack,icon }: IPropsCardProject) => {
+const CardProject = ({ title, stack, icon }: IPropsCardProject) => {
   return (
     <div className={styles.card}>
       <div className={styles.heading}>
-        {title} <br /><span>{stack}</span>
+        {title} <br />
+        <span>{stack}</span>
       </div>
-      <div className={styles.code}>
-        {icon}
-      </div>
+      <div className={styles.code}>{icon}</div>
       <div className={styles.icons_container}>
-        <a href={`/${title.split(" ")[1].toLocaleLowerCase()}`}>
-          <div className={styles.icons}>
+        <Link to={`/${title.split(" ")[1].toLocaleLowerCase()}`}>
+          <i className={styles.icons}>
             <FaArrowAltCircleRight />
-          </div>
-        </a>
+          </i>
+        </Link>
       </div>
     </div>
   );
